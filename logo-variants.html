@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вексель — варианты логотипа</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c0e12;
+      --surface: #1a1f28;
+      --border: #2a3344;
+      --text: #eef1f6;
+      --muted: #8b95a8;
+      --accent: #e85d2a;
+      --steel: #4a90c4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Manrope, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.25rem 3rem;
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+    .hint {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      max-width: 420px;
+    }
+    .hint a { color: var(--steel); }
+    .counter {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .stage {
+      width: min(100%, 420px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+    }
+    .preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+      min-height: 100px;
+    }
+    .preview img.mark {
+      width: 80px;
+      height: 80px;
+    }
+    .wordmark {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+    .wordmark span { color: var(--accent); }
+    .variant-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .variant-desc {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      min-height: 4.5em;
+    }
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1.75rem 0 1.25rem;
+    }
+    .dots button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      background: var(--border);
+      cursor: pointer;
+      padding: 0;
+    }
+    .dots button.is-active { background: var(--accent); }
+    .nav {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.7rem 1.25rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+    }
+    .btn:hover { border-color: var(--muted); }
+    .btn--primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .btn--primary:hover { filter: brightness(1.08); }
+    .grid-preview {
+      display: none;
+      width: min(100%, 720px);
+      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .grid-preview.is-visible { display: grid; }
+    .grid-preview .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      cursor: pointer;
+    }
+    .grid-preview .card:hover,
+    .grid-preview .card.is-active {
+      border-color: var(--accent);
+    }
+    .grid-preview img { width: 56px; height: 56px; margin-bottom: 0.75rem; }
+    .grid-preview h3 { font-size: 0.85rem; margin-bottom: 0.25rem; }
+    .grid-preview p { font-size: 0.75rem; color: var(--muted); }
+    .toggle-grid {
+      margin-top: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--steel);
+      font: inherit;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Вексель — варианты знака</h1>
+  <p class="hint">
+    Листайте по очереди. Выбранный вариант можно поставить на сайт.
+    <a href="index.html">← Вернуться на сайт</a>
+  </p>
+
+  <p class="counter" id="counter">Вариант 1 из 7</p>
+
+  <div class="stage">
+    <div class="preview">
+      <img class="mark" id="mark" src="assets/logos/variant-1-precision.svg" alt="" width="80" height="80" />
+      <div class="wordmark" id="wordmark">Век<span>сель</span></div>
+    </div>
+    <h2 class="variant-title" id="title"></h2>
+    <p class="variant-desc" id="desc"></p>
+    <div class="dots" id="dots"></div>
+    <div class="nav">
+      <button type="button" class="btn" id="prev">← Назад</button>
+      <button type="button" class="btn btn--primary" id="next">Далее →</button>
+    </div>
+  </div>
+
+  <button type="button" class="toggle-grid" id="toggleGrid">Показать все варианты сразу</button>
+  <div class="grid-preview" id="grid"></div>
+
+  <script>
+    const VARIANTS = [
+      {
+        file: "assets/logos/variant-1-precision.svg",
+        title: "1. Точность",
+        desc: "Буква «В», реперная линия и точка допуска. Срезанный угол — лазерная резка.",
+      },
+      {
+        file: "assets/logos/variant-2-hex.svg",
+        title: "2. Шестигранник",
+        desc: "«В» внутри гайки/шестигранника — ассоциация с крепежом и станочной оснасткой.",
+      },
+      {
+        file: "assets/logos/variant-3-minimal.svg",
+        title: "3. Минимализм",
+        desc: "Только «В» на тёмном фоне, без деталей. Чисто и хорошо читается в маленьком размере.",
+      },
+      {
+        file: "assets/logos/variant-4-document.svg",
+        title: "4. Вексель-документ",
+        desc: "Отсылка к названию: лист с «В» внутри — надёжность, договор, B2B-сделка.",
+      },
+      {
+        file: "assets/logos/variant-5-spindle.svg",
+        title: "5. Шпиндель",
+        desc: "Окружности как вращение станка, «В» в центре — производство и обработка. Сейчас на сайте.",
+      },
+      {
+        file: "assets/logos/variant-6-laser.svg",
+        title: "6. Луч",
+        desc: "Двойной контур и луч сверху — лазерная и точная резка, динамика.",
+      },
+      {
+        file: "assets/logos/variant-7-tools.svg",
+        title: "7. Резец и сверло",
+        desc: "Слева — токарный резец (оранжевый), справа — сверло (синее). Сходятся к заготовке внизу.",
+      },
+    ];
+
+    let index = 0;
+    const mark = document.getElementById("mark");
+    const titleEl = document.getElementById("title");
+    const descEl = document.getElementById("desc");
+    const counter = document.getElementById("counter");
+    const dotsEl = document.getElementById("dots");
+    const gridEl = document.getElementById("grid");
+
+    function render(i) {
+      const v = VARIANTS[i];
+      mark.src = v.file;
+      titleEl.textContent = v.title;
+      descEl.textContent = v.desc;
+      counter.textContent = `Вариант ${i + 1} из ${VARIANTS.length}`;
+      dotsEl.querySelectorAll("button").forEach((btn, j) => {
+        btn.classList.toggle("is-active", j === i);
+      });
+      gridEl.querySelectorAll(".card").forEach((card, j) => {
+        card.classList.toggle("is-active", j === i);
+      });
+    }
+
+    VARIANTS.forEach((v, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", v.title);
+      dot.addEventListener("click", () => { index = i; render(index); });
+      dotsEl.appendChild(dot);
+
+      const card = document.createElement("article");
+      card.className = "card";
+      card.innerHTML = `<img src="${v.file}" alt="" width="56" height="56" /><h3>${v.title}</h3><p>${v.desc.split(".")[0]}.</p>`;
+      card.addEventListener("click", () => { index = i; render(index); });
+      gridEl.appendChild(card);
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      index = (index - 1 + VARIANTS.length) % VARIANTS.length;
+      render(index);
+    });
+    document.getElementById("next").addEventListener("click", () => {
+      index = (index + 1) % VARIANTS.length;
+      render(index);
+    });
+
+    document.getElementById("toggleGrid").addEventListener("click", function () {
+      const open = gridEl.classList.toggle("is-visible");
+      this.textContent = open ? "Скрыть общий обзор" : "Показать все варианты сразу";
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") document.getElementById("prev").click();
+      if (e.key === "ArrowRight") document.getElementById("next").click();
+    });
+
+    index = 4;
+    render(index);
+  </script>
+</body>
+</html>
