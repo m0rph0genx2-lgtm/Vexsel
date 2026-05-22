@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <rect width="40" height="40" rx="9" fill="#141820"/>
+  <rect x="0.5" y="0.5" width="39" height="39" rx="8.5" stroke="#2a3344"/>
+  <!-- Заготовка -->
+  <circle cx="20" cy="30.5" r="2.5" fill="#1a1f28" stroke="#4a90c4" stroke-width="1"/>
+  <!-- Слева: резец (держатель + пластина) -->
+  <path d="M9 9h6.5v3.5H11v14.5" stroke="#eef1f6" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+  <path d="M11 12.5l9 18" stroke="#e85d2a" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M9 9h6.5v3.5H9V9z" fill="#eef1f6" opacity="0.15"/>
+  <path d="M10 11.5l2.5 2.5 3.5-4.5H10v-1z" fill="#e85d2a"/>
+  <!-- Справа: сверло (хвостовик + канавки + конус) -->
+  <path d="M31 9h-6.5v3.5H29v14.5" stroke="#eef1f6" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+  <path d="M29 12.5L20 30.5" stroke="#4a90c4" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M27 12.5l-7 18" stroke="#eef1f6" stroke-width="1" stroke-linecap="round" opacity="0.45"/>
+  <path d="M25 14l-5 16.5" stroke="#eef1f6" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  <path d="M27.5 10.5l2.5 3-3 .8-2.5-3.8z" fill="#4a90c4"/>
+</svg>
