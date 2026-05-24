@@ -1,0 +1,5 @@
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CupCreator.csproj.AssemblyReference.cache
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CupCreator.GeneratedMSBuildEditorConfig.editorconfig
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CupCreator.AssemblyInfoInputs.cache
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CupCreator.AssemblyInfo.cs
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CupCreator.csproj.CoreCompileInputs.cache

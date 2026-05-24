@@ -1,0 +1,4 @@
+c:\AFAR_PROJECT\CupCreator\obj\Debug\net8.0-windows\CupCreator.GeneratedMSBuildEditorConfig.editorconfig
+c:\AFAR_PROJECT\CupCreator\obj\Debug\net8.0-windows\CupCreator.AssemblyInfoInputs.cache
+c:\AFAR_PROJECT\CupCreator\obj\Debug\net8.0-windows\CupCreator.AssemblyInfo.vb
+c:\AFAR_PROJECT\CupCreator\obj\Debug\net8.0-windows\CupCreator.vbproj.CoreCompileInputs.cache

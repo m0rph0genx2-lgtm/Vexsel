@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AtMawMkoTqc=",
+  "success": true,
+  "projectFilePath": "C:\\AFAR_PROJECT\\CupCreator\\CubeByParameter.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\AppData\\Local\\Temp\\cursor-sandbox-cache\\c64423a65b7ab56abe571ea97364eaf3\\nuget\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\User\\AppData\\Local\\Temp\\cursor-sandbox-cache\\c64423a65b7ab56abe571ea97364eaf3\\nuget\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

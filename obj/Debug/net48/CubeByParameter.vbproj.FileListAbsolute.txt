@@ -1,0 +1,10 @@
+C:\AFAR_PROJECT\CupCreator\bin\Debug\net48\CubeByParameter.exe.config
+C:\AFAR_PROJECT\CupCreator\bin\Debug\net48\CubeByParameter.exe
+C:\AFAR_PROJECT\CupCreator\bin\Debug\net48\CubeByParameter.pdb
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CubeByParameter.vbproj.AssemblyReference.cache
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CubeByParameter.GeneratedMSBuildEditorConfig.editorconfig
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CubeByParameter.AssemblyInfoInputs.cache
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CubeByParameter.AssemblyInfo.vb
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CubeByParameter.vbproj.CoreCompileInputs.cache
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CubeByParameter.exe
+C:\AFAR_PROJECT\CupCreator\obj\Debug\net48\CubeByParameter.pdb
