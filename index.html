@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Вексель — механическая обработка металла для промышленных предприятий. Токарные, фрезерные работы, электроэрозионная и лазерная резка по чертежам и ТЗ." />
+  <title>Вексель — механическая обработка для промышленности</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top">
+        <img src="assets/logo.svg" alt="" class="logo__mark" width="40" height="40" />
+        <span class="logo__text">Век<span>сель</span></span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">Меню</span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#services">Услуги</a>
+        <a href="#works">Примеры работ</a>
+        <a href="#equipment">Оборудование</a>
+        <a href="#about">О компании</a>
+        <a href="#process">Как работаем</a>
+        <a href="#contact" class="nav__cta">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Механическая обработка для B2B</p>
+          <h1>Точные детали для вашего производства — в срок и по чертежу</h1>
+          <p class="hero__lead">
+            Выполняем токарные и фрезерные работы, электроэрозионную и лазерную резку
+            для машиностроения, энергетики и приборостроения. Серии и единичные заказы.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Запросить расчёт</a>
+            <a href="#works" class="btn btn--ghost">Смотреть примеры работ</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>15+</strong><span>лет на рынке</span></li>
+            <li><strong>±0,01</strong><span>мм допуск</span></li>
+            <li><strong>500+</strong><span>проектов в год</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__image-wrap">
+            <img src="assets/hero.jpg" alt="Фрезерный обрабатывающий центр HURCO VMX42" class="hero__image" width="983" height="599" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Услуги</p>
+          <h2>Механическая обработка под задачи предприятия</h2>
+          <p class="section__desc">
+            Берём на себя изготовление и доработку деталей из стали, нержавейки,
+            алюминия и сплавов — от прототипа до серийной поставки.
+          </p>
+        </header>
+        <div class="services" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="works">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Портфолио</p>
+          <h2>Примеры выполненных работ</h2>
+          <p class="section__desc">
+            Реальные изделия с указанием материала, операций и назначения.
+            Фотографии можно заменить своими в папке <code>assets/works/</code>.
+          </p>
+        </header>
+        <div class="works" id="worksGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="equipment">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Оборудование</p>
+          <h2>Производственная база</h2>
+          <p class="section__desc">
+            Современные станки с ЧПУ для точной механической обработки деталей по вашим чертежам.
+          </p>
+        </header>
+        <article class="equipment-card">
+          <div class="equipment-card__media">
+            <img
+              src="assets/equipment/hurco-vmx42.jpg"
+              alt="Фрезерный обрабатывающий центр HURCO VMX42 с пультом Ultimax"
+              width="983"
+              height="599"
+              loading="lazy"
+            />
+          </div>
+          <div class="equipment-card__body">
+            <h3>HURCO VMX42</h3>
+            <p class="equipment-card__type">Фрезерный обрабатывающий центр с ЧПУ</p>
+            <p>
+              Вертикальный центр для 3‑осевой и сложной фрезерной обработки корпусных деталей,
+              пресс-форм и узлов машиностроения. Система управления Ultimax — быстрая настройка
+              и стабильная точность в серийном производстве.
+            </p>
+            <ul class="equipment-card__tags">
+              <li>3‑осевая обработка</li>
+              <li>ЧПУ Ultimax</li>
+              <li>Корпусные детали</li>
+            </ul>
+          </div>
+        </article>
+        <article class="equipment-card equipment-card--below">
+          <div class="equipment-card__media">
+            <img
+              src="assets/equipment/cnc-lathe.jpg"
+              alt="Токарный станок Leadwell T6 с ЧПУ Fanuc"
+              width="1200"
+              height="900"
+              loading="lazy"
+            />
+          </div>
+          <div class="equipment-card__body">
+            <h3>Токарная обработка Leadwell T6, ЧПУ Fanuc</h3>
+            <ul class="equipment-card__tags">
+              <li>Токарная обработка</li>
+              <li>Leadwell T6</li>
+              <li>ЧПУ Fanuc</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__text">
+          <p class="eyebrow">О компании</p>
+          <h2>Партнёр для инженерных и закупочных отделов</h2>
+          <p>
+            Мы специализируемся на контрактной механической обработке для промышленных
+            заказчиков. Понимаем требования к документации, повторяемости партий и
+            срокам поставки на производственную линию.
+          </p>
+          <ul class="checklist">
+            <li>Работа по ГОСТ, ISO и вашим внутренним стандартам</li>
+            <li>Входной контроль материала и выходной контроль геометрии</li>
+            <li>Сопровождение КД: замечания, доработка, оптимизация технологии</li>
+            <li>NDA и конфиденциальность коммерческой информации</li>
+          </ul>
+        </div>
+        <div class="about__cards">
+          <article class="info-card">
+            <h3>Оборудование</h3>
+            <p>Фрезерный центр HURCO VMX42, токарные станки с ЧПУ, электроэрозионная и лазерная резка.</p>
+          </article>
+          <article class="info-card">
+            <h3>Материалы</h3>
+            <p>Конструкционные и нержавеющие стали, чугун, латунь, алюминиевые и титановые сплавы.</p>
+          </article>
+          <article class="info-card">
+            <h3>Для кого</h3>
+            <p>Машиностроение, нефтегаз, энергетика, пищевое и медицинское оборудование, приборостроение.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Процесс</p>
+          <h2>Как мы работаем с корпоративными заказчиками</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="steps__num">01</span>
+            <h3>Заявка и КД</h3>
+            <p>Вы присылаете чертёж, 3D-модель или ТЗ. Мы уточняем объём, материал и сроки.</p>
+          </li>
+          <li>
+            <span class="steps__num">02</span>
+            <h3>Расчёт и КП</h3>
+            <p>Готовим коммерческое предложение с ценой, сроком и условиями контроля качества.</p>
+          </li>
+          <li>
+            <span class="steps__num">03</span>
+            <h3>Изготовление</h3>
+            <p>Запускаем обработку, при необходимости согласуем промежуточные образцы.</p>
+          </li>
+          <li>
+            <span class="steps__num">04</span>
+            <h3>Поставка</h3>
+            <p>Передаём детали с паспортом/протоколом измерений и документами для вашего учёта.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band__inner">
+        <h2>Нужен надёжный подрядчик по мехобработке?</h2>
+        <p>Отправьте чертёж — ответим с ориентиром по срокам и стоимости в течение 1 рабочего дня.</p>
+        <a href="#contact" class="btn btn--primary btn--light">Оставить заявку</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <header class="section__head section__head--left">
+          <p class="eyebrow">Контакты</p>
+          <h2>Обсудим ваш проект</h2>
+          <p class="section__desc">
+            Заполните форму или свяжитесь напрямую. Укажите отрасль и желаемые сроки —
+            это ускорит подготовку ответа.
+          </p>
+        </header>
+        <form class="form" id="contactForm">
+          <label>
+            Компания
+            <input type="text" name="company" required placeholder="ООО «Пример»" />
+          </label>
+          <label>
+            Контактное лицо
+            <input type="text" name="name" required placeholder="Иван Петров" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="zakaz@company.ru" />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+          </label>
+          <label class="form__full">
+            Описание задачи
+            <textarea name="message" rows="4" required placeholder="Тип детали, материал, тираж, сроки…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary form__submit">Отправить заявку</button>
+          <p class="form__note" id="formNote">Форма демонстрационная: подключите отправку на ваш email или CRM.</p>
+        </form>
+        <aside class="contact__aside">
+          <div class="contact__block">
+            <h3>Контактное лицо</h3>
+            <p>Евгений</p>
+          </div>
+          <div class="contact__block">
+            <h3>Телефон</h3>
+            <a href="tel:+79515030988">+7 951 503-09-88</a>
+            <a href="tel:+79894217671">+7 989 421-76-71</a>
+          </div>
+          <div class="contact__block">
+            <h3>Email</h3>
+            <a href="mailto:m0rph0genx6@gmail.com">m0rph0genx6@gmail.com</a>
+          </div>
+          <div class="contact__block">
+            <h3>Адрес производства</h3>
+            <p>г. Азов, ул. Южная, 8</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Вексель. Механическая обработка для промышленности.</p>
+      <a href="#top">Наверх</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__panel">
+      <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Закрыть">&times;</button>
+      <figure class="lightbox__figure">
+        <img id="lightboxImg" src="" alt="" decoding="async" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
