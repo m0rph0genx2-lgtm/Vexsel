@@ -1,0 +1,11 @@
+# Inventor / локальные артефакты (не для сайта)
+*.ipt
+*.log
+inventor-dlls.txt
+InventorConstants.txt
+INVENTOR_KNOWLEDGE_BASE.md
+.cursorrules
+
+# Сборки (при необходимости раскомментируйте, если не хотите пушить bin/obj)
+# bin/
+# obj/
