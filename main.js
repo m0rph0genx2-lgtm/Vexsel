@@ -49,10 +49,12 @@ function renderServices() {
 function renderWorks() {
   worksGrid.innerHTML = WORKS.map((w, i) => {
     const id = `work-${i}`;
+    const imgClass =
+      w.imageFit === "contain" ? "work-card__img work-card__img--contain" : "work-card__img";
     return `
     <article class="work-card" data-index="${i}" tabindex="0" role="button" aria-label="Открыть: ${w.title}">
       <div class="work-card__img-wrap">
-        <img class="work-card__img" id="${id}" src="${w.image}" alt="${w.title}" loading="lazy" />
+        <img class="${imgClass}" id="${id}" src="${w.image}" alt="${w.title}" loading="lazy" />
         <div class="work-card__fallback">Добавьте фото: ${w.image}</div>
       </div>
       <div class="work-card__body">

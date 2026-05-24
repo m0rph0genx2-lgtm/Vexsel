@@ -464,6 +464,11 @@ a {
   object-fit: cover;
 }
 
+.work-card__img--contain {
+  object-fit: contain;
+  object-position: center center;
+}
+
 .work-card__fallback {
   position: absolute;
   inset: 0;
