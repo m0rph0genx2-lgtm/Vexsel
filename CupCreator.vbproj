@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>CupCreator</RootNamespace>
+    <AssemblyName>CupCreator</AssemblyName>
+    <StartupObject>CupCreator.Program</StartupObject>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.vb" />
+  </ItemGroup>
+  <!-- No explicit reference needed for late‑binding COM usage -->
+</Project>
